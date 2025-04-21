@@ -7,7 +7,7 @@ function App() {
   const [currentData, setCurrentData] = useState(0)
   return (
     <div className="App">
-      <img src='/mcbn_alternate_logo.png' width={150}/>
+      <img src={`${import.meta.env.BASE_URL}mcbn_alternate_logo.png`} width={150} />
       <div className='text-container'>
           <h1>{data[currentData].username}</h1>
           <p>{data[currentData].text}</p>
