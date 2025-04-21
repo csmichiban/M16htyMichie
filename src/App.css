@@ -1,0 +1,80 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.App {
+    background: url('/public/MICHIE_BACKDROP.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.text-container {
+    background-color: #E8C77D;
+    width: 40%;
+    height: 60%;
+    position: relative;
+    top: -10%;
+    left: 55%;
+    opacity: 0.8;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.text-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pages {
+    position: relative;
+    left: 50%;
+    top: 60%
+}
+
+.btn-container {
+    margin-top: 15px;
+    position: relative;
+    top: -10%;
+    left: 55%;
+    display: flex;
+    gap: 5px;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+}
+
+.btn-container button:hover {
+    cursor: pointer;
+}
+
+.button-container button:disabled {
+    cursor: not-allowed !important;
+}
